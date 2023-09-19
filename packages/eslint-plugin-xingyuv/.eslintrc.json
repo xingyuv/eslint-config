@@ -1,0 +1,6 @@
+{
+  "extends": "@xingyuv",
+  "plugins": [
+    "xingyuv"
+  ]
+}

@@ -1,9 +1,9 @@
 {
-  "name": "@antfu/eslint-config-monorepo",
-  "version": "0.43.0-beta.1",
+  "name": "@xingyuv/eslint-config-monorepo",
+  "version": "0.1.1",
   "private": true,
   "packageManager": "pnpm@8.7.6",
-  "author": "Anthony Fu <anthonyfu117@hotmail.com> (https://github.com/antfu/)",
+  "author": "xingyuv (https://github.com/xingyuv/)",
   "license": "MIT",
   "scripts": {
     "lint": "pnpm -r run stub && eslint .",
@@ -13,11 +13,11 @@
     "release": "bumpp -r && pnpm -r publish"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "workspace:*",
+    "@xingyuv/eslint-config": "workspace:*",
     "@stylistic/eslint-plugin-migrate": "^0.0.3",
     "bumpp": "^9.2.0",
     "eslint": "^8.49.0",
-    "eslint-plugin-antfu": "link:./packages/eslint-plugin-antfu",
+    "eslint-plugin-xingyuv": "link:./packages/eslint-plugin-xingyuv",
     "rimraf": "^5.0.1",
     "typescript": "^5.2.2"
   }

@@ -1,13 +1,13 @@
 const fs = require('node:fs')
 const { join } = require('node:path')
 const process = require('node:process')
-const basic = require('@antfu/eslint-config-basic')
+const basic = require('@xingyuv/eslint-config-basic')
 
 const tsconfig = process.env.ESLINT_TSCONFIG || 'tsconfig.eslint.json'
 
 module.exports = {
   extends: [
-    '@antfu/eslint-config-basic',
+    '@xingyuv/eslint-config-basic',
     'plugin:import/typescript',
     'plugin:@typescript-eslint/recommended',
   ],
@@ -286,12 +286,12 @@ module.exports = {
       offsetTernaryExpressions: true,
     }],
 
-    // antfu
-    'antfu/generic-spacing': 'error',
-    'antfu/no-cjs-exports': 'error',
-    'antfu/no-ts-export-equal': 'error',
-    'antfu/no-const-enum': 'error',
-    'antfu/named-tuple-spacing': 'error',
+    // xingyuv
+    'xingyuv/generic-spacing': 'error',
+    'xingyuv/no-cjs-exports': 'error',
+    'xingyuv/no-ts-export-equal': 'error',
+    'xingyuv/no-const-enum': 'error',
+    'xingyuv/named-tuple-spacing': 'error',
 
     // off
     '@typescript-eslint/consistent-indexed-object-style': 'off',

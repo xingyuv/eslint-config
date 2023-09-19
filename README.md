@@ -1,6 +1,6 @@
-# @antfu/eslint-config
+# @xingyuv/eslint-config
 
-[![npm](https://img.shields.io/npm/v/@antfu/eslint-config?color=444&label=)](https://npmjs.com/package/@antfu/eslint-config) [![code style](https://antfu.me/badge-code-style.svg)](https://github.com/antfu/eslint-config)
+[![npm](https://img.shields.io/npm/v/@xingyuv/eslint-config?color=444&label=)](https://npmjs.com/package/@xingyuv/eslint-config) [![code style](https://xingyuv.com/badge-code-style.svg)](https://github.com/xingyuv/eslint-config)
 
 - Single quotes, no semi
 - Auto fix for formatting (aimed to be used standalone **without** Prettier)
@@ -15,14 +15,14 @@
 ### Install
 
 ```bash
-pnpm add -D eslint @antfu/eslint-config
+pnpm add -D eslint @xingyuv/eslint-config
 ```
 
 ### Config `.eslintrc`
 
 ```json
 {
-  "extends": "@antfu"
+  "extends": "@xingyuv"
 }
 ```
 
@@ -86,7 +86,7 @@ const process = require('node:process')
 process.env.ESLINT_TSCONFIG = 'tsconfig.json'
 
 module.exports = {
-  extends: '@antfu'
+  extends: '@xingyuv'
 }
 ```
 
@@ -116,16 +116,16 @@ npm i -D lint-staged simple-git-hooks
 If you enjoy this code style, and would like to mention it in your project, here is the badge you can use:
 
 ```md
-[![code style](https://antfu.me/badge-code-style.svg)](https://github.com/antfu/eslint-config)
+[![code style](https://xingyuv.com/badge-code-style.svg)](https://github.com/xingyuv/eslint-config)
 ```
 
-[![code style](https://antfu.me/badge-code-style.svg)](https://github.com/antfu/eslint-config)
+[![code style](https://xingyuv.com/badge-code-style.svg)](https://github.com/xingyuv/eslint-config)
 
 ## FAQ
 
 ### Prettier?
 
-[Why I don't use Prettier](https://antfu.me/posts/why-not-prettier)
+[Why I don't use Prettier](https://xingyuv.me/posts/why-not-prettier)
 
 ### How to lint CSS?
 
@@ -139,7 +139,7 @@ Sure, you can override the rules in your `.eslintrc` file.
 
 ```jsonc
 {
-  "extends": "@antfu",
+  "extends": "@xingyuv",
   "rules": {
     // your rules...
   }
@@ -148,13 +148,6 @@ Sure, you can override the rules in your `.eslintrc` file.
 
 Or you can always fork this repo and make your own.
 
-## Check Also
-
-- [antfu/dotfiles](https://github.com/antfu/dotfiles) - My dotfiles
-- [antfu/vscode-settings](https://github.com/antfu/vscode-settings) - My VS Code settings
-- [antfu/ts-starter](https://github.com/antfu/ts-starter) - My starter template for TypeScript library
-- [antfu/vitesse](https://github.com/antfu/vitesse) - My starter template for Vue & Vite app
-
 ## License
 
-[MIT](./LICENSE) License &copy; 2019-PRESENT [Anthony Fu](https://github.com/antfu)
+[MIT](./LICENSE) License &copy; 2023-PRESENT [xingyuv](https://github.com/xingyuv)

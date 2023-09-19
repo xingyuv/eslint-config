@@ -1,10 +1,10 @@
 {
-  "name": "@antfu/eslint-config-basic",
-  "version": "0.43.0-beta.1",
+  "name": "@xingyuv/eslint-config-basic",
+  "version": "0.1.1",
   "description": "",
-  "author": "Anthony Fu <anthonyfu117@hotmail.com> (https://github.com/antfu/)",
+  "author": "xingyuv (https://github.com/xingyuv/)",
   "license": "MIT",
-  "homepage": "https://github.com/antfu/eslint-config",
+  "homepage": "https://github.com/xingyuv/eslint-config",
   "keywords": [
     "eslint-config"
   ],
@@ -20,7 +20,6 @@
   },
   "dependencies": {
     "@stylistic/eslint-plugin-js": "0.0.3",
-    "eslint-plugin-antfu": "workspace:*",
     "eslint-plugin-eslint-comments": "^3.2.0",
     "eslint-plugin-html": "^7.1.0",
     "eslint-plugin-import": "npm:eslint-plugin-i@2.28.1",
@@ -32,6 +31,7 @@
     "eslint-plugin-promise": "^6.1.1",
     "eslint-plugin-unicorn": "^48.0.1",
     "eslint-plugin-unused-imports": "^3.0.0",
+    "eslint-plugin-xingyuv": "workspace:*",
     "eslint-plugin-yml": "^1.9.0",
     "jsonc-eslint-parser": "^2.3.0",
     "yaml-eslint-parser": "^1.2.2"

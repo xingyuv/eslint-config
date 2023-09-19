@@ -1,6 +1,6 @@
 {
   "extends": [
-    "@antfu",
+    "@xingyuv",
     "plugin:@stylistic/migrate/recommended"
   ]
 }

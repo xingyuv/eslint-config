@@ -52,7 +52,7 @@ module.exports = {
   plugins: [
     'html',
     'unicorn',
-    'antfu',
+    'xingyuv',
     'no-only-tests',
     'unused-imports',
     'jsdoc',
@@ -223,8 +223,8 @@ module.exports = {
 
         'import/no-unresolved': 'off',
 
-        'antfu/no-cjs-exports': 'off',
-        'antfu/no-ts-export-equal': 'off',
+        'xingyuv/no-cjs-exports': 'off',
+        'xingyuv/no-ts-export-equal': 'off',
 
         'n/prefer-global/process': 'off',
       },
@@ -426,10 +426,10 @@ module.exports = {
     'jsdoc/require-returns-type': 'off',
     'jsdoc/require-throws': 'off',
 
-    // antfu
-    'antfu/no-import-node-modules-by-path': 'error',
-    'antfu/if-newline': 'error',
-    'antfu/import-dedupe': 'error',
-    'antfu/top-level-function': 'error',
+    // xingyuv
+    'xingyuv/no-import-node-modules-by-path': 'error',
+    'xingyuv/if-newline': 'error',
+    'xingyuv/import-dedupe': 'error',
+    'xingyuv/top-level-function': 'error',
   },
 }

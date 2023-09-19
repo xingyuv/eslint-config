@@ -8,21 +8,21 @@ importers:
 
   .:
     devDependencies:
-      '@antfu/eslint-config':
-        specifier: workspace:*
-        version: link:packages/eslint-config
       '@stylistic/eslint-plugin-migrate':
         specifier: ^0.0.3
         version: 0.0.3(eslint@8.49.0)(typescript@5.2.2)
+      '@xingyuv/eslint-config':
+        specifier: workspace:*
+        version: link:packages/eslint-config
       bumpp:
         specifier: ^9.2.0
         version: 9.2.0
       eslint:
         specifier: ^8.49.0
         version: 8.49.0
-      eslint-plugin-antfu:
-        specifier: link:./packages/eslint-plugin-antfu
-        version: link:packages/eslint-plugin-antfu
+      eslint-plugin-xingyuv:
+        specifier: link:./packages/eslint-plugin-xingyuv
+        version: link:packages/eslint-plugin-xingyuv
       rimraf:
         specifier: ^5.0.1
         version: 5.0.1
@@ -32,15 +32,15 @@ importers:
 
   packages/eslint-config:
     dependencies:
-      '@antfu/eslint-config-vue':
-        specifier: workspace:*
-        version: link:../eslint-config-vue
       '@typescript-eslint/eslint-plugin':
         specifier: ^6.7.2
         version: 6.7.2(@typescript-eslint/parser@6.7.2)(eslint@8.49.0)(typescript@5.2.2)
       '@typescript-eslint/parser':
         specifier: ^6.7.2
         version: 6.7.2(eslint@8.49.0)(typescript@5.2.2)
+      '@xingyuv/eslint-config-vue':
+        specifier: workspace:*
+        version: link:../eslint-config-vue
       eslint-plugin-eslint-comments:
         specifier: ^3.2.0
         version: 3.2.0(eslint@8.49.0)
@@ -84,9 +84,6 @@ importers:
       '@stylistic/eslint-plugin-js':
         specifier: 0.0.3
         version: 0.0.3
-      eslint-plugin-antfu:
-        specifier: workspace:*
-        version: link:../eslint-plugin-antfu
       eslint-plugin-eslint-comments:
         specifier: ^3.2.0
         version: 3.2.0(eslint@8.49.0)
@@ -120,6 +117,9 @@ importers:
       eslint-plugin-unused-imports:
         specifier: ^3.0.0
         version: 3.0.0(eslint@8.49.0)
+      eslint-plugin-xingyuv:
+        specifier: workspace:*
+        version: link:../eslint-plugin-xingyuv
       eslint-plugin-yml:
         specifier: ^1.9.0
         version: 1.9.0(eslint@8.49.0)
@@ -136,7 +136,7 @@ importers:
 
   packages/eslint-config-react:
     dependencies:
-      '@antfu/eslint-config-ts':
+      '@xingyuv/eslint-config-ts':
         specifier: workspace:*
         version: link:../eslint-config-ts
       eslint-plugin-react:
@@ -158,9 +158,6 @@ importers:
 
   packages/eslint-config-ts:
     dependencies:
-      '@antfu/eslint-config-basic':
-        specifier: workspace:*
-        version: link:../eslint-config-basic
       '@stylistic/eslint-plugin-ts':
         specifier: 0.0.3
         version: 0.0.3(eslint@8.49.0)(typescript@5.0.2)
@@ -170,6 +167,9 @@ importers:
       '@typescript-eslint/parser':
         specifier: ^6.7.2
         version: 6.7.2(eslint@8.49.0)(typescript@5.0.2)
+      '@xingyuv/eslint-config-basic':
+        specifier: workspace:*
+        version: link:../eslint-config-basic
       eslint-plugin-jest:
         specifier: ^27.4.0
         version: 27.4.0(@typescript-eslint/eslint-plugin@6.7.2)(eslint@8.49.0)(typescript@5.0.2)
@@ -183,10 +183,10 @@ importers:
 
   packages/eslint-config-vue:
     dependencies:
-      '@antfu/eslint-config-basic':
+      '@xingyuv/eslint-config-basic':
         specifier: workspace:*
         version: link:../eslint-config-basic
-      '@antfu/eslint-config-ts':
+      '@xingyuv/eslint-config-ts':
         specifier: workspace:*
         version: link:../eslint-config-ts
       eslint-plugin-vue:
@@ -200,7 +200,7 @@ importers:
         specifier: ^8.49.0
         version: 8.49.0
 
-  packages/eslint-plugin-antfu:
+  packages/eslint-plugin-xingyuv:
     dependencies:
       '@typescript-eslint/utils':
         specifier: ^6.7.2
@@ -1800,12 +1800,12 @@ packages:
       pretty-format: 29.5.0
     dev: true
 
-  /acorn-jsx@5.3.2(acorn@8.8.2):
+  /acorn-jsx@5.3.2(acorn@8.10.0):
     resolution: {integrity: sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ==}
     peerDependencies:
       acorn: ^6.0.0 || ^7.0.0 || ^8.0.0
     dependencies:
-      acorn: 8.8.2
+      acorn: 8.10.0
     dev: false
 
   /acorn-jsx@5.3.2(acorn@8.9.0):
@@ -2956,8 +2956,8 @@ packages:
     resolution: {integrity: sha512-5yxtHSZXRSW5pvv3hAlXM5+/Oswi1AUFqBmbibKb5s6bp3rGIDkyXU6xCoyuuLhijr4SFwPrXRoZjz0AZDN9tg==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dependencies:
-      acorn: 8.8.2
-      acorn-jsx: 5.3.2(acorn@8.8.2)
+      acorn: 8.10.0
+      acorn-jsx: 5.3.2(acorn@8.10.0)
       eslint-visitor-keys: 3.4.2
     dev: false
 
@@ -4934,7 +4934,7 @@ packages:
       '@vitest/snapshot': 0.34.4
       '@vitest/spy': 0.34.4
       '@vitest/utils': 0.34.4
-      acorn: 8.9.0
+      acorn: 8.10.0
       acorn-walk: 8.2.0
       cac: 6.7.14
       chai: 4.3.7
