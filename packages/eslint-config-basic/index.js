@@ -168,6 +168,7 @@ module.exports = {
       files: ['*.d.ts'],
       rules: {
         'import/no-duplicates': 'off',
+        'eslint-comments/no-unlimited-disable': 'off',
       },
     },
     {
@@ -231,6 +232,7 @@ module.exports = {
     },
   ],
   rules: {
+    'max-len': ['error', { code: 140, tabWidth: 2, ignoreComments: true }],
     // Import
     'import/order': 'error',
     'import/first': 'error',
@@ -345,7 +347,7 @@ module.exports = {
     'complexity': 'off',
     'eqeqeq': ['error', 'smart'],
     'no-alert': 'warn',
-    'no-case-declarations': 'error',
+    'no-case-declarations': 'off',
     'no-multi-str': 'error',
     'no-with': 'error',
     'no-void': 'error',
@@ -425,6 +427,11 @@ module.exports = {
     'jsdoc/require-returns': 'off',
     'jsdoc/require-returns-type': 'off',
     'jsdoc/require-throws': 'off',
+    'jsdoc/no-multi-asterisks': 'off',
+    'jsdoc/valid-types': 'off',
+    'jsdoc/check-param-names': 'off',
+    'jsdoc/require-returns-description': 'off',
+    'jsdoc/require-returns-check': 'off',
 
     // xingyuv
     'xingyuv/no-import-node-modules-by-path': 'error',
