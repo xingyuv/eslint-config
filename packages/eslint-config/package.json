@@ -1,6 +1,6 @@
 {
   "name": "@xingyuv/eslint-config",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Anthony's ESLint config",
   "author": "xingyuv (https://github.com/xingyuv/)",
   "license": "MIT",
