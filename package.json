@@ -13,7 +13,7 @@
     "release": "bumpp -r && pnpm -r publish"
   },
   "devDependencies": {
-    "@stylistic/eslint-plugin-migrate": "^0.0.3",
+    "@stylistic/eslint-plugin-migrate": "^0.0.4",
     "@xingyuv/eslint-config": "workspace:*",
     "bumpp": "^9.2.0",
     "eslint": "^8.49.0",
