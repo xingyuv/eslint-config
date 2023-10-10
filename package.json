@@ -1,6 +1,6 @@
 {
   "name": "@xingyuv/eslint-config-monorepo",
-  "version": "0.1.6",
+  "version": "0.2.0",
   "private": false,
   "packageManager": "pnpm@8.7.6",
   "author": "xingyuv (https://github.com/xingyuv/)",
@@ -13,12 +13,12 @@
     "release": "bumpp -r && pnpm -r publish"
   },
   "devDependencies": {
-    "@stylistic/eslint-plugin-migrate": "^0.0.4",
+    "@stylistic/eslint-plugin-migrate": "^0.0.8",
     "@xingyuv/eslint-config": "workspace:*",
     "bumpp": "^9.2.0",
-    "eslint": "^8.49.0",
+    "eslint": "^8.51.0",
     "eslint-plugin-xingyuv": "link:./packages/eslint-plugin-xingyuv",
-    "rimraf": "^5.0.1",
+    "rimraf": "^5.0.5",
     "typescript": "^5.2.2"
   }
 }

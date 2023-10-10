@@ -1,6 +1,6 @@
 {
   "name": "@xingyuv/eslint-config-react",
-  "version": "0.1.6",
+  "version": "0.2.0",
   "description": "",
   "author": "xingyuv (https://github.com/xingyuv/)",
   "license": "MIT",
@@ -16,7 +16,7 @@
     "lint": "eslint . --config=index.js"
   },
   "peerDependencies": {
-    "eslint": ">=7.4.0"
+    "eslint": ">=8.0.0"
   },
   "dependencies": {
     "@xingyuv/eslint-config-ts": "workspace:*",
@@ -24,7 +24,7 @@
     "eslint-plugin-react-hooks": "^4.6.0"
   },
   "devDependencies": {
-    "eslint": "^8.49.0",
+    "eslint": "^8.51.0",
     "react": "^18.2.0",
     "typescript": "^5.2.2"
   }
